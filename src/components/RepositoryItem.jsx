@@ -1,9 +1,9 @@
 const RepositoryItem = (props) => {
     return (
         <li>
-            <strong>{props.repo?.name ?? 'Default'}</strong>
+            <strong>{props.repo.name}</strong>
             <p>{props.repo?.description ?? 'Descrição vazia'}</p>
-            <a href={props.repo?.html_url ?? 'https://github.com/'}>Access repository</a>
+            <a href={props.repo.html_url}>Access repository</a>
         </li>
     )
 }
