@@ -1,4 +1,13 @@
-const RepositoryItem = (props) => {
+type RepositoryItemProps = {
+    key?: number
+    repo: {
+        name: string
+        description?: string
+        html_url: string
+    }
+}
+
+const RepositoryItem = (props: RepositoryItemProps) => {
     return (
         <li>
             <strong>{props.repo.name}</strong>
