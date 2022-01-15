@@ -10,8 +10,10 @@ type RepositoryItemProps = {
 const RepositoryItem = (props: RepositoryItemProps) => {
     return (
         <li>
-            <strong>{props.repo.name}</strong>
-            <p>{props.repo?.description ?? 'Descrição vazia'}</p>
+            <div>
+                <strong>{props.repo.name}</strong>
+                <p>{props.repo?.description ?? 'Descrição vazia'}</p>
+            </div>
             <a href={props.repo.html_url}>Access repository</a>
         </li>
     )
